@@ -25,7 +25,7 @@ Function.method('new', function () {
     var that = Object.create(this.prototype);
 
     // Apply constructor to new obj
-    var other = this.apply(that, arguments)
+    var other = this.apply(that, arguments);
 
     // if returned other is not an object then return our new obj
     return (typeof other === 'object ' && other) || that;
